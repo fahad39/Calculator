@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 function Button(props) {
   const isOperator = (val) => {
-    if (!isNaN(val) || val === "." || val === "=") {
+    if (!isNaN(val)) {
       return true;
     } else {
       return false;
